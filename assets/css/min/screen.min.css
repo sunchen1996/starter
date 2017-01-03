@@ -71,7 +71,7 @@ pre {
 code {
     margin: 0 .2rem;
     padding: .2rem .5rem;
-    font-size: 100%;
+    font-size: 90%;
     white-space: nowrap;
     background: rgba(0, 0, 0, 0.04);
     border-radius: 5px;
@@ -1930,5 +1930,8 @@ h1:hover a, h2:hover a, h3:hover a, h4:hover a, h5:hover a, h6:hover a {
 
     .read-next-story .prev {
         text-align: right;
+    }
+    code {
+        font-size: 100%;
     }
 }
