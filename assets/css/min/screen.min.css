@@ -1256,6 +1256,17 @@ mark,
     flex-direction: row;
 }
 
+
+.custom_title_text {
+    display: flex;
+    padding: 12px;
+    line-height: 40px;
+    font-weight: 400;
+    color: #fafafa;
+    text-shadow: 1px 1px 8px #444;
+}
+
+
 @-webkit-keyframes fadeInTop {
     0% {
         top: 20%;
