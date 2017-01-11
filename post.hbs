@@ -14,9 +14,16 @@
           {{tags prefix="in "}}
         </p>
         {{#if image}}
-          <section class="featured-image">
-            <img src="{{image}}" alt="{{title}}">
-          </section>
+          <!--<section class="featured-image">-->
+            <!--<img src="{{image}}" alt="{{title}}">-->
+          <!--</section>-->
+            <div class="custom_title_img"
+                 style="background-image: url('{{image}}')">
+
+                <h1 class="custom_title_text" ;>
+                    {{{title}}}
+                </h1>
+            </div>
         {{/if}}
       </header>
 

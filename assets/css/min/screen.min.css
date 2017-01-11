@@ -1241,6 +1241,21 @@ mark,
     -webkit-overflow-scrolling: touch;
 }
 
+
+.custom_title_img {
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    height: 280px;
+    display: flex;
+    align-items: flex-end;
+    cursor: pointer;
+    flex-grow: 1;
+    flex-direction: row;
+}
+
 @-webkit-keyframes fadeInTop {
     0% {
         top: 20%;
