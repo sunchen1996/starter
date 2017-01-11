@@ -8,11 +8,11 @@
 
     <article class="{{post_class}}">
       <header class="post-header">
-        <h2>{{title}}</h2>
-        <p>
-          <time datetime="{{date format='YYYY-MM-DD'}}">Posted on {{date format="MMMM DD, YYYY"}}</time>
-          {{tags prefix="in "}}
-        </p>
+        <!--<h2>{{title}}</h2>-->
+        <!--<p>-->
+          <!--<time datetime="{{date format='YYYY-MM-DD'}}">Posted on {{date format="MMMM DD, YYYY"}}</time>-->
+          <!--{{tags prefix="in "}}-->
+        <!--</p>-->
         {{#if image}}
           <!--<section class="featured-image">-->
             <!--<img src="{{image}}" alt="{{title}}">-->
@@ -25,6 +25,10 @@
                 </h1>
             </div>
         {{/if}}
+          <p>
+              <time datetime="{{date format='YYYY-MM-DD'}}">Posted on {{date format="MMMM DD, YYYY"}}</time>
+              {{tags prefix="in "}}
+          </p>
       </header>
 
       <section class="post-content">
