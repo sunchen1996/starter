@@ -196,7 +196,7 @@ input[type='file'] {
     width: 100%;
     max-width: 112rem;
     margin: 0 auto;
-    padding: 0 1rem;
+    /*padding: 0 1rem;*/
 }
 
 .row {
@@ -1729,7 +1729,7 @@ h1:hover a, h2:hover a, h3:hover a, h4:hover a, h5:hover a, h6:hover a {
 
 @media screen and (min-width: 480px) {
     .site-header {
-        margin: 4rem 0 6rem;
+        margin: 4rem 2em 6rem;
     }
 }
 
