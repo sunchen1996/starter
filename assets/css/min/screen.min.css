@@ -979,12 +979,13 @@ input[type='file'] {
 }
 
 img {
-    display: inline-block;
+    display: block;
     max-width: 100%;
     min-height: 0;
     height: auto;
     vertical-align: middle;
     border-radius: 5px;
+    margin: 1em auto;
 }
 
 a {
