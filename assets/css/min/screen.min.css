@@ -1962,7 +1962,12 @@ h1:hover a, h2:hover a, h3:hover a, h4:hover a, h5:hover a, h6:hover a {
         text-align: right;
     }
 
-    code {
+    .code {
         font-size: 100%;
+    }
+
+    .custom_title_img {
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
     }
 }
