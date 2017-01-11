@@ -4,93 +4,93 @@
 <main class="site-main wow fadeIn" data-wow-duration=".8s" role="main">
 
     {{! Everything inside the #post tags pulls data from the post }}
-    {{#post}}
-
-        <article class="{{post_class}}">
-            <header class="post-header">
-
-                {{#if image}}
-
-                    <div class="custom_title_img"
-                         style="background-image: url('{{image}}')">
-
-                        <h1 class="custom_title_text" ;>
-                            {{{title}}}
-                        </h1>
-                    </div>
-                {{else}}
-                    <div class="custom_title_img"
-                         style="background-image: url('http://image.sunchen.cc/normal_title_bg.jpg')">
-
-                        <h1 class="custom_title_text" ;>
-                            {{{title}}}
-                        </h1>
-                    </div>
-                {{/if}}
-                <p style="color: #989898">
-                    <time datetime="{{date format='YYYY-MM-DD'}}">Posted on {{date format="MMMM DD, YYYY"}}</time>
-                    {{tags prefix="in "}}
-                </p>
-            </header>
-
-            <section class="post-content">
-                {{content}}
-            </section>
-        </article>
 
     <div class="container">
+        {{#post}}
 
-        <section class="read-next-story">
-            <div class="row">
+            <article class="{{post_class}}">
+                <header class="post-header">
 
-                <div class="column">
-                    {{#next_post}}
-                        <div class="next">
-                            <p>Next story</p>
-                            <h3><a href="{{url}}">{{title}}</a></h3>
+                    {{#if image}}
+
+                        <div class="custom_title_img"
+                             style="background-image: url('{{image}}')">
+
+                            <h1 class="custom_title_text" ;>
+                                {{{title}}}
+                            </h1>
                         </div>
-                    {{/next_post}}
-                </div>
-
-                <div class="column">
-                    {{#prev_post}}
-                        <div class="prev">
-                            <p>Previous story</p>
-                            <h3><a href="{{url}}">{{title}}</a></h3>
-                        </div>
-                    {{/prev_post}}
-                </div>
-
-            </div>
-        </section>
-
-        {{> widget-share}}
-
-        {{!-- Everything inside the #author tags pulls data from the author --}}
-        {{#author}}
-            <section class="post-author">
-                {{#if image}}
-                    <a class="author-image" href="{{url}}" style="background-image: url({{image}})"><span
-                            class="hidden">{{name}}'s Picture</span></a>
-                {{/if}}
-
-                <div class="author-data">
-                    <h4>Written by <a href="{{url}}">{{name}}</a></h4>
-
-                    {{#if bio}}
-                        <p>{{bio}}</p>
                     {{else}}
-                        <p>Read <a href="{{url}}">more posts</a> by this author.</p>
+                        <div class="custom_title_img"
+                             style="background-image: url('http://image.sunchen.cc/normal_title_bg.jpg')">
+
+                            <h1 class="custom_title_text" ;>
+                                {{{title}}}
+                            </h1>
+                        </div>
                     {{/if}}
+                    <p style="color: #989898">
+                        <time datetime="{{date format='YYYY-MM-DD'}}">Posted on {{date format="MMMM DD, YYYY"}}</time>
+                        {{tags prefix="in "}}
+                    </p>
+                </header>
+
+                <section class="post-content">
+                    {{content}}
+                </section>
+            </article>
+
+            <section class="read-next-story">
+                <div class="row">
+
+                    <div class="column">
+                        {{#next_post}}
+                            <div class="next">
+                                <p>Next story</p>
+                                <h3><a href="{{url}}">{{title}}</a></h3>
+                            </div>
+                        {{/next_post}}
+                    </div>
+
+                    <div class="column">
+                        {{#prev_post}}
+                            <div class="prev">
+                                <p>Previous story</p>
+                                <h3><a href="{{url}}">{{title}}</a></h3>
+                            </div>
+                        {{/prev_post}}
+                    </div>
+
                 </div>
-
             </section>
-        {{/author}}
 
-        {{! The tag below includes comments - partials/comments.hbs }}
-        {{> comments}}
+            {{> widget-share}}
 
-    {{/post}}
-</div>
+            {{!-- Everything inside the #author tags pulls data from the author --}}
+            {{#author}}
+                <section class="post-author">
+                    {{#if image}}
+                        <a class="author-image" href="{{url}}" style="background-image: url({{image}})"><span
+                                class="hidden">{{name}}'s Picture</span></a>
+                    {{/if}}
+
+                    <div class="author-data">
+                        <h4>Written by <a href="{{url}}">{{name}}</a></h4>
+
+                        {{#if bio}}
+                            <p>{{bio}}</p>
+                        {{else}}
+                            <p>Read <a href="{{url}}">more posts</a> by this author.</p>
+                        {{/if}}
+                    </div>
+
+                </section>
+            {{/author}}
+
+            {{! The tag below includes comments - partials/comments.hbs }}
+            {{> comments}}
+
+        {{/post}}
+    </div>
 
 </main>
