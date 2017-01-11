@@ -1243,8 +1243,8 @@ mark,
 
 
 .custom_title_img {
-    border-top-left-radius: 6px;
-    border-top-right-radius: 6px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
     position: relative;
     background-position: center;
     background-size: cover;
@@ -1967,7 +1967,8 @@ h1:hover a, h2:hover a, h3:hover a, h4:hover a, h5:hover a, h6:hover a {
     }
 
     .custom_title_img {
-        border-top-left-radius: 0px;
-        border-top-right-radius: 0px;
+
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
     }
 }
