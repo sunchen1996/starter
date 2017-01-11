@@ -199,6 +199,10 @@ input[type='file'] {
     padding: 0 1rem;
 }
 
+.no_padding {
+    padding: 0 0rem;
+}
+
 .row {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1241,7 +1245,6 @@ mark,
     -webkit-overflow-scrolling: touch;
 }
 
-
 .custom_title_img {
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -1256,7 +1259,6 @@ mark,
     flex-direction: row;
 }
 
-
 .custom_title_text {
     display: flex;
     padding: 12px;
@@ -1265,7 +1267,6 @@ mark,
     color: #fafafa;
     text-shadow: 1px 1px 8px #444;
 }
-
 
 @-webkit-keyframes fadeInTop {
     0% {
