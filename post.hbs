@@ -5,7 +5,7 @@
 
     {{! Everything inside the #post tags pulls data from the post }}
 
-    <div class="container">
+    <!--<div class="container">-->
         {{#post}}
 
             <article class="{{post_class}}">
@@ -46,7 +46,7 @@
                     <div class="column">
                         {{#next_post}}
                             <div class="next">
-                                <p>Next story</p>
+                                <p>下一篇</p>
                                 <h3><a href="{{url}}">{{title}}</a></h3>
                             </div>
                         {{/next_post}}
@@ -55,7 +55,7 @@
                     <div class="column">
                         {{#prev_post}}
                             <div class="prev">
-                                <p>Previous story</p>
+                                <p>上一篇</p>
                                 <h3><a href="{{url}}">{{title}}</a></h3>
                             </div>
                         {{/prev_post}}
@@ -91,6 +91,6 @@
             {{> comments}}
 
         {{/post}}
-    </div>
+    <!--</div>-->
 
 </main>
