@@ -1266,6 +1266,7 @@ mark,
     font-weight: 400;
     color: #fafafa;
     text-shadow: 1px 1px 8px #444;
+    position: absolute;
 }
 
 .custom_title_date {
