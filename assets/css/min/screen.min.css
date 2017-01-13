@@ -1273,6 +1273,7 @@ mark,
     position: absolute;
     text-shadow: 1px 1px 8px #444;
     width: 100%;
+    margin-top: -103px;
 }
 
 @-webkit-keyframes fadeInTop {
