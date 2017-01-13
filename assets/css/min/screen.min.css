@@ -1266,15 +1266,11 @@ mark,
     font-weight: 400;
     color: #fafafa;
     text-shadow: 1px 1px 8px #444;
-    position: absolute;
 }
 
-.custom_title_date {
+.custom_title_date{
     color: #989898;
-    position: absolute;
-    text-shadow: 1px 1px 8px #444;
-    width: 100%;
-    margin-top: 0px;
+    position:absolute;
 }
 
 @-webkit-keyframes fadeInTop {
