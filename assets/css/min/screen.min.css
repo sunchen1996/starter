@@ -1268,6 +1268,11 @@ mark,
     text-shadow: 1px 1px 8px #444;
 }
 
+.custom_title_date{
+    color: #989898;
+    position:absolute;
+}
+
 @-webkit-keyframes fadeInTop {
     0% {
         top: 20%;
