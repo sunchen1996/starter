@@ -1257,7 +1257,6 @@ mark,
     cursor: pointer;
     flex-grow: 1;
     flex-direction: row;
-    display: block;
 }
 
 .custom_title_text {
