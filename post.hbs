@@ -19,6 +19,11 @@
                             <h1 class="custom_title_text" ;>
                                 {{{title}}}
                             </h1>
+
+                            <p style="color: #989898">
+                                <time datetime="{{date format='YYYY-MM-DD'}}">Posted on {{date format="MMMM DD, YYYY"}}</time>
+                                {{tags prefix="in "}}
+                            </p>
                         </div>
                     {{else}}
                         <div class="custom_title_img"
