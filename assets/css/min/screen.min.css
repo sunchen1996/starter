@@ -1928,10 +1928,12 @@ h1:hover a, h2:hover a, h3:hover a, h4:hover a, h5:hover a, h6:hover a {
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
     justify-content: space-between;
+    padding: 0 1.5rem;
 }
 
 .post-header-featured .post-title {
     max-width: 88%;
+    margin: 0rem;
 }
 
 .post-header-featured .featured-label {
