@@ -1980,6 +1980,7 @@ h1:hover a, h2:hover a, h3:hover a, h4:hover a, h5:hover a, h6:hover a {
 
 .read-next-story h3 {
     font-size: 2.6rem;
+    margin: -1rem 1rem 2rem 1rem;
 }
 
 @media screen and (min-width: 480px) {
