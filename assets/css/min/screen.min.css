@@ -1737,6 +1737,7 @@ h1:hover a, h2:hover a, h3:hover a, h4:hover a, h5:hover a, h6:hover a {
     background-size: cover;
     height: 400px;
     border-radius: 6px;
+    margin: 0 1.5rem;
 }
 
 .site-header:after {
