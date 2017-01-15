@@ -1361,6 +1361,7 @@ mark,
 .pagination {
     width: 100%;
     margin: 0 auto 4rem auto;
+    padding: 0rem 1.5rem;
 }
 
 @media screen and (min-width: 480px) {
