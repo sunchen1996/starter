@@ -1929,4 +1929,19 @@ h1:hover a, h2:hover a, h3:hover a, h4:hover a, h5:hover a, h6:hover a {
     .read-next-story .prev {
         text-align: right;
     }
+
+    pre,
+    blockquote,
+    dl,
+    figure,
+    table,
+    p,
+    ul,
+    ol,
+    form {
+        margin-bottom: 2.5rem;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+
 }
