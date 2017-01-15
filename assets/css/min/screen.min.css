@@ -1652,7 +1652,7 @@ p {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    margin: 1rem 2rem 0.6rem 2rem;
+    margin: 2rem 2rem 0.6rem 2rem;
     color: #283037;
     font-family: "Source Sans Pro", sans-serif;
     font-weight: 700;
