@@ -1735,7 +1735,7 @@ h1:hover a, h2:hover a, h3:hover a, h4:hover a, h5:hover a, h6:hover a {
 .cover-title-img{
     background-position: center;
     background-size: cover;
-    height: 400px;
+    height: 250px;
     border-radius: 6px;
     margin: 0 1.5rem;
 }
@@ -2011,5 +2011,9 @@ h1:hover a, h2:hover a, h3:hover a, h4:hover a, h5:hover a, h6:hover a {
     form {
         margin-right: 1.5rem;
         margin-left: 1.5rem;
+    }
+
+    .cover-title-img{
+        height: 400px;
     }
 }
