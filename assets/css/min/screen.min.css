@@ -991,6 +991,7 @@ img {
     vertical-align: middle;
     border-radius: 5px;
     margin: 1em auto;
+    padding: 0 1.5rem;
 }
 
 a {
@@ -1361,7 +1362,7 @@ mark,
 .pagination {
     width: 100%;
     margin: 0 auto 4rem auto;
-    padding: 0rem 1.5rem;
+    padding: 0rem 2rem;
 }
 
 @media screen and (min-width: 480px) {
