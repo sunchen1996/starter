@@ -21,7 +21,11 @@
       {{#if image}}
         <section class="featured-image">
           <a href="{{url}}">
-            <img src="{{image}}" alt="{{title}}">
+            <!--<img src="{{image}}" alt="{{title}}">-->
+              <div class="custom_title_img"
+                   style="background-image: url('{{image}}')">
+              </div>
+
           </a>
         </section>
       {{/if}}

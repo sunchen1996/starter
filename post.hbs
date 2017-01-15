@@ -6,103 +6,105 @@
     {{! Everything inside the #post tags pulls data from the post }}
 
     <!--<div class="container">-->
-        {{#post}}
+    {{#post}}
 
-            <article class="{{post_class}}">
-                <header class="post-header">
+        <article class="{{post_class}}">
+            <header class="post-header">
 
-                    {{#if image}}
+                {{#if image}}
 
-                        <div class="custom_title_img"
-                             style="background-image: url('{{image}}')">
+                    <div class="custom_title_img"
+                         style="background-image: url('{{image}}')">
 
-                            <h1 class="custom_title_text" ;>
-                                {{{title}}}
-                            </h1>
+                        <h1 class="custom_title_text" ;>
+                            {{{title}}}
+                        </h1>
 
-                            <!--<p class="custom_title_date">-->
-                                <!--<time datetime="{{date format='YYYY-MM-DD'}}">Posted on {{date format="MMMM DD, YYYY"}}</time>-->
-                                <!--{{tags prefix="in "}}-->
-                            <!--</p>-->
-                        </div>
-                    {{else}}
-                        <div class="custom_title_img"
-                             style="background-image: url('http://image.sunchen.cc/normal_title_bg.jpg')">
-
-                            <h1 class="custom_title_text" ;>
-                                {{{title}}}
-                            </h1>
-
-                            <!--<p class="custom_title_date">-->
-                                <!--<time datetime="{{date format='YYYY-MM-DD'}}">Posted on {{date format="MMMM DD, YYYY"}}</time>-->
-                                <!--{{tags prefix="in "}}-->
-                            <!--</p>-->
-                        </div>
-                    {{/if}}
-                    <p style="color: #989898">
-                        <time datetime="{{date format='YYYY-MM-DD'}}">Posted on {{date format="MMMM DD, YYYY"}}</time>
-                        {{tags prefix="in "}}
-                    </p>
-                </header>
-
-                <section class="post-content">
-                    {{content}}
-                </section>
-            </article>
-
-            <section class="read-next-story">
-                <div class="row">
-
-                    <div class="column">
-                        {{#next_post}}
-                            <div class="next">
-                                <p>下一篇</p>
-                                <h3><a href="{{url}}">{{title}}</a></h3>
-                            </div>
-                        {{/next_post}}
+                        <!--<p class="custom_title_date">-->
+                        <!--<time datetime="{{date format='YYYY-MM-DD'}}">Posted on {{date
+                                format="MMMM DD, YYYY"}}</time>-->
+                        <!--{{tags prefix="in "}}-->
+                        <!--</p>-->
                     </div>
+                {{else}}
+                    <div class="custom_title_img"
+                         style="background-image: url('http://image.sunchen.cc/normal_title_bg.jpg')">
 
-                    <div class="column">
-                        {{#prev_post}}
-                            <div class="prev">
-                                <p>上一篇</p>
-                                <h3><a href="{{url}}">{{title}}</a></h3>
-                            </div>
-                        {{/prev_post}}
+                        <h1 class="custom_title_text" ;>
+                            {{{title}}}
+                        </h1>
+
+                        <!--<p class="custom_title_date">-->
+                        <!--<time datetime="{{date format='YYYY-MM-DD'}}">Posted on {{date
+                                format="MMMM DD, YYYY"}}</time>-->
+                        <!--{{tags prefix="in "}}-->
+                        <!--</p>-->
                     </div>
+                {{/if}}
+                <p style="color: #989898">
+                    <time datetime="{{date format='YYYY-MM-DD'}}">Posted on {{date format="MMMM DD, YYYY"}}</time>
+                    {{tags prefix="in "}}
+                </p>
+            </header>
 
-                </div>
+            <section class="post-content">
+                {{content}}
             </section>
+        </article>
 
-            {{!-- Everything inside the #author tags pulls data from the author --}}
-            {{#author}}
-                <section class="post-author">
-                    {{#if image}}
-                        <a class="author-image" href="{{url}}" style="background-image: url({{image}})"><span
-                                class="hidden">{{name}}'s Picture</span></a>
+        <section class="read-next-story">
+            <div class="row">
+
+                <div class="column">
+                    {{#next_post}}
+                        <div class="next">
+                            <p>下一篇</p>
+                            <h3><a href="{{url}}">{{title}}</a></h3>
+                        </div>
+                    {{/next_post}}
+                </div>
+
+                <div class="column">
+                    {{#prev_post}}
+                        <div class="prev">
+                            <p>上一篇</p>
+                            <h3><a href="{{url}}">{{title}}</a></h3>
+                        </div>
+                    {{/prev_post}}
+                </div>
+
+            </div>
+        </section>
+
+        {{!-- Everything inside the #author tags pulls data from the author --}}
+        {{#author}}
+            <section class="post-author">
+                {{#if image}}
+                    <a class="author-image" href="{{url}}" style="background-image: url({{image}})"><span
+                            class="hidden">{{name}}'s Picture</span></a>
+                {{/if}}
+
+                <div class="author-data">
+                    <h4>Written by <a href="{{url}}">{{name}}</a></h4>
+
+                    {{#if bio}}
+                        <p>{{bio}}</p>
+                    {{else}}
+                        <p>Read <a href="{{url}}">more posts</a> by this author.</p>
                     {{/if}}
+                </div>
 
-                    <div class="author-data">
-                        <h4>Written by <a href="{{url}}">{{name}}</a></h4>
+            </section>
+        {{/author}}
 
-                        {{#if bio}}
-                            <p>{{bio}}</p>
-                        {{else}}
-                            <p>Read <a href="{{url}}">more posts</a> by this author.</p>
-                        {{/if}}
-                    </div>
+        {{! The tag below includes comments - partials/comments.hbs }}
+        {{> comments}}
 
-                </section>
-            {{/author}}
-
-            {{! The tag below includes comments - partials/comments.hbs }}
-            {{> comments}}
-
-            <!----------------------------------------------------------------------------------------------------->
+        <!----------------------------------------------------------------------------------------------------->
 
 
-            <!----------------------------------------------------------------------------------------------------->
-        {{/post}}
+        <!----------------------------------------------------------------------------------------------------->
+    {{/post}}
     <!--</div>-->
 
 </main>
