@@ -196,7 +196,7 @@ input[type='file'] {
     width: 100%;
     max-width: 112rem;
     margin: 0 auto;
-    padding: 0 2rem;
+    /*padding: 0 2rem;*/
 }
 
 .no_padding {
@@ -1747,6 +1747,7 @@ h1:hover a, h2:hover a, h3:hover a, h4:hover a, h5:hover a, h6:hover a {
     width: 100%;
     max-width: 80rem;
     margin: 0 auto;
+    padding: 0 2rem;
 }
 
 .site-hero {
