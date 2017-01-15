@@ -91,6 +91,7 @@ pre > code {
     padding: 4rem 0 2rem 0;
     border-top: 1px solid #E9EBED;
     text-align: center;
+    margin: 0 2rem;
     *zoom: 1;
 }
 
@@ -106,7 +107,6 @@ pre > code {
 @media screen and (min-width: 480px) {
     .site-footer {
         text-align: left;
-        margin: 0 2rem;
     }
 
     .site-footer .copyright {
