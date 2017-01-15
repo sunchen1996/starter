@@ -1,13 +1,15 @@
 <nav class="pagination" role="pagination">
 
-  <span class="page-number">Page {{page}} of {{pages}}</span>
 
-  <ul>
-    {{#if prev}}
-      <li class="prev"><a href="{{page_url prev}}">新物</a></li>
-    {{/if}}
-    {{#if next}}
-      <li class="next"><a href="{{page_url next}}">旧事</a></li>
-    {{/if}}
-  </ul>
+    <ul>
+        {{#if prev}}
+            <li class="prev"><a href="{{page_url prev}}">新物</a></li>
+        {{/if}}
+        {{#if next}}
+            <li class="next"><a href="{{page_url next}}">旧事</a></li>
+        {{/if}}
+    </ul>
+
+    <span class="page-number">Page {{page}} of {{pages}}</span>
+
 </nav>
