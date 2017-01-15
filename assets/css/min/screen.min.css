@@ -44,14 +44,21 @@ body {
 }
 
 blockquote {
-    margin: 1.5rem;
-    padding: 1rem;
-    color: #66727D;
-    font-family: "Source Sans Pro", sans-serif;
-    font-size: 1.8rem;
+    /*margin: 1.5rem;*/
+    /*padding: 1rem;*/
+    /*color: #66727D;*/
+    /*font-family: "Source Sans Pro", sans-serif;*/
+    /*font-size: 1.8rem;*/
+    /*font-weight: 400;*/
+    /*line-height: 1.8;*/
+    /*border-left: 2px solid #0081EF;*/
+
+    margin: 2em 3em;
+    padding: 1em 1em;
+    box-sizing: border-box;
+    border-left: 0.25em solid #607D8B;
     font-weight: 400;
-    line-height: 1.8;
-    border-left: 2px solid #0081EF;
+    background: #f6f6f6;
 }
 
 blockquote *:last-child {
