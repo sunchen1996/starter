@@ -1464,11 +1464,13 @@ mark,
 .scroll-top {
     display: block;
     margin-bottom: 2rem;
+    margin-top: 2rem;
 }
 
 @media screen and (min-width: 480px) {
     .scroll-top {
         float: right;
+        margin-top: 0rem;
     }
 }
 
