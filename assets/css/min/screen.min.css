@@ -1799,6 +1799,7 @@ h1:hover a, h2:hover a, h3:hover a, h4:hover a, h5:hover a, h6:hover a {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    margin: 0 2rem;
 }
 
 .site-hero-header {
