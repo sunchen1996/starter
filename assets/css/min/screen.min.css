@@ -1640,6 +1640,8 @@ ul,
 ol,
 form {
     margin-bottom: 2.5rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
 }
 
 table {
@@ -1670,7 +1672,7 @@ p {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    margin: 2rem 1.5rem 0.6rem 1.5rem;
+    margin: 3rem 1.5rem 1rem 1.5rem;
     color: #283037;
     font-family: "Source Sans Pro", sans-serif;
     font-weight: 700;
