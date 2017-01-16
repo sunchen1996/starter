@@ -1044,7 +1044,7 @@ dl {
 }
 
 ul {
-    list-style: square inside;
+    /*list-style: square inside;*/
 }
 
 ol {
