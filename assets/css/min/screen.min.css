@@ -1329,7 +1329,7 @@ mark,
     }
 
     .site-navigation {
-        top: 0;
+        top: 35px;
         z-index: 0;
     }
 
