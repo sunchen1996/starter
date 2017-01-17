@@ -1913,7 +1913,7 @@ h1:hover a, h2:hover a, h3:hover a, h4:hover a, h5:hover a, h6:hover a {
 
 .post-author {
     margin-bottom: 6rem;
-    padding: 3rem;
+    padding: 3rem 0;
     /*background-color: #F6F7F7;*/
     /*border: 1px solid #E9EBED;*/
     border-radius: 5px;
