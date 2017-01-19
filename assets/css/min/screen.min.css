@@ -1764,7 +1764,7 @@ h1:hover a, h2:hover a, h3:hover a, h4:hover a, h5:hover a, h6:hover a {
 
 @media screen and (min-width: 480px) {
     .site-header {
-        margin: 4rem 5em 6rem;
+        margin: 4rem 1em 6rem;
     }
 }
 
