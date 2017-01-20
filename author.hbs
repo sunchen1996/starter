@@ -11,8 +11,10 @@
       <header class="site-hero-header">
         {{#if image}}
           <div class="author-image" style="background-image: url({{image}})">{{name}}'s Picture</div>
+            <h2 class="site-hero-title">{{name}}</h2>
+        {{else}}
+            <h2 class="site-hero2-title">{{name}}</h2>
         {{/if}}
-        <h2 class="site-hero-title">{{name}}</h2>
         {{#if bio}}
           <p class="site-hero-description">{{bio}}</p>
         {{/if}}
