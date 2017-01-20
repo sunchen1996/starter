@@ -1798,7 +1798,7 @@ h1:hover a, h2:hover a, h3:hover a, h4:hover a, h5:hover a, h6:hover a {
     min-height: 14rem;
     margin-bottom: 6rem;
     color: #FFF;
-    border-radius: 5px;
+    border-radius: 3px;
     overflow: hidden;
     background-position: center;
     background-repeat: no-repeat;
