@@ -2035,6 +2035,7 @@ h1:hover a, h2:hover a, h3:hover a, h4:hover a, h5:hover a, h6:hover a {
     .custom_title_img {
         border-top-left-radius: 6px;
         border-top-right-radius: 6px;
+        height: 400px;
 
     }
 
