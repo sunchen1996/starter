@@ -35,7 +35,8 @@ body {
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: rgba(0, 129, 239, 0.45);
+    /*background-color: rgba(0, 129, 239, 0.45);*/
+    background-color: rgba(0, 129, 239, 0.22);
 }
 
 .hidden {
