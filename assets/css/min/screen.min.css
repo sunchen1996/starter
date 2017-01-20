@@ -7,7 +7,8 @@ html {
 body {
     margin: 0;
     color: #283037;
-    font-family: "Source Sans Pro", sans-serif;
+    /*font-family: "Source Sans Pro", sans-serif;*/
+    font: 300 1em/1.5em "微软雅黑", sans-serif;
     font-size: 1.6rem;
     font-weight: 400;
     line-height: 1.6;
